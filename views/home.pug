@@ -1,0 +1,72 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+      div#logo 
+        img(src='../static/img/logo.png')
+      ul 
+        li #[a(href="/") Home] 
+        li #[a(href="/") About us]
+        li #[a(href="/") Blog]
+        li #[a(href="/") Classes]
+        li #[a(href="/register") Register]
+        li #[a(href="/login") Login]
+    section#intro 
+      h1  Welcome to the Fitness World
+      h2  Enjoy a high spec gym, S&amp;C Classes, HIIT Classes and Hot Yoga.
+      h2 One membership, full access. Train Your Way.
+      button#btn JOIN NOW.
+    section#sponser 
+      h1 Register your interset.
+      h2  Want to find out more?
+      h2  Register here and we'll be in touch soon 
+      button#btn REGISTER 
+    section#train 
+      h1 Train
+      h2 Utilise a range of high end equipment,train on our dedicated S&amp;C floor
+      h2 and enjoy a huge range of equipment, rigs, platforms and
+      h2 more help you hit peak performance.  
+      div.boxes
+        div.box#box1
+          h2 NOT JUST YOUR STANDARD GYM
+          p Push it, pull it, lift it, slam it. We’ve got everything you need to build the best workouts. This is your playground, enjoy it
+        div.box#box2 
+          h2 YOUR Personal Trainer
+          p Our PTs are the best and they are there for you. If you need some help building your programme or someone to push you that extra bit, our team are here to help
+        div.box#box3  
+          h2 HIT YOUR PEAK
+          p Test yourself on our range of cardio equipment including ski, row, air bikes and more. Whatever your goal we have the equipment you need to succeed  
+    section.black black
+    section#pt 
+     h1 Personal Training
+     h2 You know what you want to achieve. We’re here to help you get there
+     button#btn TRAINING 
+     div.boxes
+       div.box#box1
+        h2 THE RIGHT TRAINER FOR YOU
+       div.box#box2
+        h2 HIGHLY SKILLED
+       div.box#box3
+        h2 YOUR GOAL, GREAT RESULTS
+
+    section.black black
+    section#yoga 
+      h1 Yoga
+      h2 Escape the stress of the everyday in our yoga studio offering yoga, hot yoga and pilates classes
+      div.boxes 
+       div.box#box1
+         h2 HOT POWER YOGA
+         p Enjoy the mental and physical challenge through the power of yoga
+       div.box#box2 
+         h2 HOT FLOW YOGA
+         p Immerse yourself in this complete mind, body experience
+
+    section.black black
+
+    footer#footer 
+      |Copyright &copy; Fitness.com 2021 | All rights reserved.  
+    script
+      include ../static/home.js

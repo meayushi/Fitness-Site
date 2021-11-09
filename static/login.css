@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#login{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 45vh;
+    align-items: center;
+}
+#login::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    /* top: 4.8rem; */
+    opacity: 0.9;
+    height: 45vh;
+    width: 100%;
+    background: url("../static/img/train.jpg") no-repeat center center/cover;
+    filter:invert(-10px);
+}
+h1{
+    color: rgba(195, 78, 24, 0.877);
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+#block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    background-color:rgba(97, 172, 37, 0.808) ;
+}
+#block #form{
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 22px;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+#block #form input{
+    margin: 12px;
+    padding: 10px;
+    width: 25vw;
+    border: 2px solid rgba(0, 0, 0, 0.671);
+    /* border-radius: 3px; */
+    background-color: rgba(0, 0, 0, 0.144);
+    font-family: 'Baloo 2', cursive;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.438);
+}
+#btn1{
+    width: 94%;
+    height: 38px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left:11px ;
+    font-family: 'Baloo 2', cursive;
+    background-color:rgb(195, 78, 24) ;
+    cursor: pointer;
+    /* padding-left: 13px; */
+}
+span{
+    text-align: center;
+}

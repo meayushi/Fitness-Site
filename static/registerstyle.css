@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#register{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 45vh;
+    align-items: center;
+}
+#register::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    /* top: 4.8rem; */
+    opacity: 0.9;
+    height: 46vh;
+    width: 100%;
+    background: url("../static/img/train.jpg") no-repeat center center/cover;
+    filter:invert(-10px);
+}
+#form{
+    position: relative;
+    background-color:rgba(97, 172, 37, 0.808) ;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form p{
+    text-align: center;
+    color:rgba(0, 0, 0, 0.856);
+    font-family: 'Baloo 2', cursive;
+    font-size:x-large;
+    font-weight: bold;
+}
+#form #registerform{
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    flex-direction: column;
+    width:40vw;
+}
+#form #registerform #rest{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#form #registerform input{
+    margin: 12px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.671);
+    /* border-radius: 3px; */
+    background-color: rgba(0, 0, 0, 0.144);
+    font-family: 'Baloo 2', cursive;
+    /* font-size: 13px; */
+    /* color: black; */
+    /* width: 50vw; */
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.438);
+}
+#form #registerform .classy input{
+    /* margin: 12px; */
+    width: 18vw;
+    margin-right:14px ;
+}
+#btn1{
+    width: 96%;
+    height: 6vh;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left:11px ;
+    font-family: 'Baloo 2', cursive;
+    background-color:rgb(195, 78, 24) ;
+    cursor: pointer;
+    /* padding-left: 13px; */
+}
+h1{
+    color: rgba(195, 78, 24, 0.877);
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+p{
+    margin-left: 45px;
+    text-align: center;
+}

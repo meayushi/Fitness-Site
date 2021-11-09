@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+  script(src='/static/home.js')
+
+block style 
+  style
+    include ../static/style.css
+    include ../static/registerstyle.css
+
+block content  
+  section#register 
+    h1 REGISTER 
+  section#form 
+    p Register your interest with us to stay up-to-date with what's happening at Fitness World.
+    form#registerform(action="/register",method="post",class="Rgform")
+      div.classy#Name
+        input#FName(type="text" , name="fname",placeholder="First Name") 
+        input#LName(type="text" , name="lname",placeholder="Last Name") 
+      div#Gender  
+        | &nbsp;&nbsp;&nbsp;Gender:
+      div#option     
+        input#Gender(type="radio", name="gender") 
+        span  Male
+        input#Gender(type="radio", name="gender") 
+        span  Female
+      div.classy  
+        input#Weight(type="number" ,name="weight", placeholder="Current Weight") 
+        input#height(type="number" ,name="height", placeholder="Height") 
+      div.classy  
+        input#Age(type="number" ,name="age", placeholder="Age") 
+        input#BMI(type="number" , name="bmi",placeholder="BMI")
+      div#rest 
+        input#GoalWeight(type="number" ,name="goal", placeholder="Goal Weight") 
+        input#Address(type="textarea" ,name="add", placeholder="Address") 
+        input#PhoneNum(type="tel" ,name="phone", placeholder="Phone Number") 
+        input#Email(type="email" ,name="mail", placeholder="Email") 
+        input#CreatePas(type="password" ,name="password", placeholder="Create Password") 
+        input#ConfirmPas(type="password" ,name="password", placeholder="Confirm Password") 
+      div.classy      
+        input#EmergencyContact(type="number",name="emcontact", placeholder="Emergency Contact Number") 
+        input#EmergencyName(type="text",name="emname", placeholder="Emergency Contact Name") 
+      div
+        button#btn1 REGISTER
+      
+
+  

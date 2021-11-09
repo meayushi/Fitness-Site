@@ -1,0 +1,220 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body{
+    background-color:rgba(97, 172, 37, 0.808) ;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgba(97, 172, 37, 0.808);
+    height: 12vh;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar #logo{
+    display: flex;
+    width:17%;
+    margin-left: 28px;
+    height: 50%;
+    cursor: pointer;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding-left: 45px;
+}
+#navbar li{
+    list-style: none;
+    margin-top:2rem;
+    
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 25px;
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.856);
+    font-weight: bold;
+}
+#navbar li a:hover{
+    color: rgb(195, 78, 24);
+    /* font-weight: bold; */
+}
+#intro{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+    align-items: center;
+}
+#intro::before{
+    content:"";
+    position: absolute;
+    background: url("../static/img/victor-freitas-WvDYdXDzkhs-unsplash.jpg") no-repeat center center/cover;
+    opacity: 0.7;
+    top:4.8em;
+    height: 85vh;
+    width: 100%;
+    z-index: -1;
+
+}
+ h1{
+    padding:8px;
+    font-size: 3.4rem;
+    font-family: 'Baloo 2', cursive;
+    color: rgba(0, 0, 0, 0.856);
+}
+h2{
+    /* padding: 5px; */
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+}
+#btn{
+    background-color:rgb(195, 78, 24) ;
+    padding:6px;
+    margin: 18px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.2rem;
+    /* border: 2px solid rgba(97, 172, 37, 0.808); */
+    border-radius: 7px;
+    cursor: pointer;
+}
+#sponser{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top:-3.5px;
+    background-color: rgba(97, 172, 37, 0.808);
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+#train{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -4px;
+    height:85vh;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(121, 47, 47); */
+    /* background: url("../static/img/train1.jpg") no-repeat center center/cover; */
+}
+#train::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    height:85vh;
+    width: 100%;
+    opacity: 0.7;
+    background: rgb(121, 47, 47);
+    background: url("../static/img/train1.jpg") no-repeat center center/cover;
+    z-index: -1;
+
+}
+#train div.boxes,#yoga div.boxes,#pt div.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+}
+#train div.box{
+    margin:30px;
+    padding: 10px;
+    width: 20%;
+    height: 80%;
+    box-shadow: 10px -10px rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+#pt{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:-4px;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+#pt::before{
+    position: absolute;
+    content: "";
+    top:-4px;
+    height:87vh;
+    width: 100%;
+    opacity: 0.6;
+    background: url("../static/img/gymtred.jpg") no-repeat center center/cover;
+    z-index: -1;
+}
+
+
+#pt div.box{
+    margin:30px;
+    padding: 10px;
+    width: 50%;
+    height: 80%;
+    box-shadow: 10px -10px rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.267);
+}
+#yoga{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:-4px;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+#yoga::before{
+    position: absolute;
+    content: "";
+    top:-4px;
+    height:87vh;
+    width: 100%;
+    opacity: 0.9;
+    background: url("../static/img/bruce-mars-gJtDg6WfMlQ-unsplash.jpg") no-repeat center center/cover;
+    z-index: -1;
+}
+
+#yoga div.box{
+    margin:30px;
+    margin-bottom: 0px;
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+    box-shadow: 10px -10px rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+p{
+    padding-top: 20px;
+    padding: 20px;
+    color: whitesmoke;
+}
+/* yoga box and boxes are styled alongwith trainerbox */
+.black{
+    position: relative;
+    top: -6px;
+    background-color: black;
+    width: 100%;
+    height: 20%;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: black;
+    color: azure;
+    height: 20vh;
+
+}
